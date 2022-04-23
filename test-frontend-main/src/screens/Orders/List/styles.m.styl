@@ -1,0 +1,66 @@
+@import '../../../common.styl';
+
+.screenWrapper {
+  width: 100%;
+  display: flex;
+  background-color: #E6E9FA;
+  justify-content: center;
+  padding-right: 20px;
+
+  .screen {
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+    border-radius: 5px;
+
+    .table {
+      .head {
+        color: black;
+        width: 100%;
+
+        .row {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          height: 50px;
+
+          .rowElement {
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100px;
+
+            h1 {
+              font-weight: 400;
+              font-size: 14px;
+              color: $primary-darker;
+              height: 10px;
+            }
+
+            h2 {
+              height: 40px;
+              font-weight: 400;
+              height: 15px;
+              font-size: 12px;
+              color: $primary;
+              margin-bottom: -10px;
+            }
+          }
+        }
+      }
+
+      .body {
+        color: #E6E9FA;
+      }
+    }
+
+    .pagination {
+      margin-top: 20px;
+      background-color: #E6E9FA;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
